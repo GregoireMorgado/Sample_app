@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
+gem "heroku"  
 
 group :development do
   gem 'rspec-rails', '2.5.0'
@@ -13,5 +14,8 @@ group :test do
   gem 'nokogiri', '1.6.4.1'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
 
 
